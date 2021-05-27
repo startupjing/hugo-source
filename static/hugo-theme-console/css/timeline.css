@@ -1,0 +1,254 @@
+/*!https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css */
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+h5 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.container-timeline {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width:576px) {
+  .container-timeline {
+    max-width: 540px;
+  }
+}
+
+@media (min-width:768px) {
+  .container-timeline {
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .container-timeline {
+    max-width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container-timeline {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width:576px) {
+  .container-timeline {
+    max-width: 540px;
+  }
+}
+
+@media (min-width:768px) {
+  .container-timeline {
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .container-timeline {
+    max-width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container-timeline {
+    max-width: 1140px;
+  }
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.card-title {
+  margin-bottom: .75rem;
+  color: #ffffff !important;
+  font-style: bold !important;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, .03);
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.card-header:first-child {
+  border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+.border-0 {
+  border: 0!important;
+}
+
+.rounded-0 {
+  border-radius: 0!important;
+}
+
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
+.flex-column {
+  -ms-flex-direction: column!important;
+  flex-direction: column!important;
+}
+
+.py-2 {
+  padding-top: .5rem!important;
+}
+
+.py-2 {
+  padding-bottom: .5rem!important;
+}
+
+.text-white {
+  color: #fff!important;
+}
+
+
+/*! Custom CSS */
+
+.bg-base {
+  background-color: #020312!important;
+}
+
+.bg-main {
+  background-color: #f26c4f!important;
+}
+
+.timeline {
+  color: #f26c4f;
+}
+
+.timeline,
+.timeline-item {
+  position: relative;
+}
+
+.timeline:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  width: 3px;
+  margin-left: -1.5px;
+  background-color: currentcolor;
+}
+
+.timeline-item {
+  padding: 10px;
+  width: 50%;
+}
+
+.timeline-item:before {
+  content: " ";
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  border-width: 10px;
+  border-color: transparent transparent transparent currentcolor;
+  border-style: solid;
+}
+
+.timeline-item:nth-child(even) {
+  align-self: flex-end;
+}
+
+.timeline-item:nth-child(even):before {
+  right: auto;
+  left: -10px;
+  border-color: transparent currentcolor transparent transparent;
+}
+
+@media (max-width: 768px) {
+  .timeline:before {
+    left: 0;
+  }
+  .timeline-item {
+    width: 100%;
+  }
+  .timeline-item:before {
+    right: auto;
+    left: -10px;
+    border-color: transparent currentcolor transparent transparent;
+  }
+}
+
+
+/*! RTL */
+[dir="rtl"] .timeline:before {
+  left: auto;
+  right: 50%;
+  margin-left: 0;
+  margin-right: -1.5px;
+}
+
+[dir="rtl"] .timeline-item:before {
+  right: auto;
+  left: -10px;
+  border-color: transparent currentcolor transparent transparent;
+}
+
+[dir="rtl"] .timeline-item:nth-child(even):before {
+  right: -10px;
+  left: auto;
+  border-color: transparent transparent transparent currentcolor;
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .timeline:before {
+    right: 0;
+  }
+  [dir="rtl"] .timeline-item:before {
+    right: -10px;
+    left: auto;
+    border-color: transparent transparent transparent currentcolor;
+  }
+}

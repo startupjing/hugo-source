@@ -1,0 +1,9 @@
+.pull-right {
+  float: right;
+}
+
+.navigation {
+  float: right;
+  font-style: italic;
+  font-size: 14px;
+}
