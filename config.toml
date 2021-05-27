@@ -21,8 +21,8 @@ theme = "hugo-theme-console"
   url = "about/"
 
   [[params.navlinks]]
-  name = "posts/"
-  url = "posts/"
+  name = "blog/"
+  url = "blog/"
 
   [params.social]
   rss            = true
