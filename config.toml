@@ -1,7 +1,42 @@
 baseURL = "https://startupjing.github.io"
 languageCode = "en-us"
 title = "My New Hugo Site"
-theme = "hugo-theme-console"
+theme = ["hugo-theme-console", "timeline"]
+
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "timeline"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
 
 [params]
   # Cutting off the page title to two chars for mobile (console-demo -> co)
@@ -21,14 +56,32 @@ theme = "hugo-theme-console"
   url = "about/"
 
   [[params.navlinks]]
-  name = "blog/"
-  url = "blog/"
+  name = "posts/"
+  url = "posts/"
 
-  [params.social]
-  rss            = true
-  email          = "rich.youngkin@gmail.com"
-  linkedin       = "https://www.linkedin.com/in/richard-youngkin-0749763"
-  github         = "https://github.com/youngkin"
-  medium         = "https://medium.com/@RichYoungkin"
-  stackoverflow  = "https://stackoverflow.com/users/2646870/rich"
-  reddit         = "https://www.reddit.com/user/elevation5280"
+  [[params.navlinks]]
+  name = "timeline/"
+  url = "timeline/"
+
+
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Sharing buttons
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
+  enableSharingButtons = true
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = ["css/custom.css"]
+  customJS  = []
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  justifyContent = false  # Set "text-align: justify" to .post-content.
+
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+  themeColor = "#252627"
